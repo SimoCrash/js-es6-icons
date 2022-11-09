@@ -113,19 +113,42 @@ const arrCard = [
 	}
 ];
 
+let selectBtn = document.querySelector(".select");
 
-// arrCard.forEach(function (ele){
-// 	eleCard.innerHTML += ele;
-// 	console.log(ele);
-// })
 
 arrCard.forEach((element) => {
 	const eleCard = document.querySelector(".cards");
-	let card = document.createElement("div");
+let card = document.createElement("div");
 	card.classList.add("card");
 	eleCard.append(card);
-	card.innerHTML = `
-	<i class="${element.family}-solid ${element.prefix}${element.name}" style="color: ${element.color}"></i>
-	<div> ${element.name} </div>
-	`;
+	
+		card.innerHTML = `
+		<i class="${element.family}-solid ${element.prefix}${element.name}" style="color: ${element.color}"></i>
+		<div> ${element.name} </div>
+		`;
+	console.log(selectBtn.value);
 });
+
+// const selectAnimal = [];
+// const selectVegetable = [];
+// const selectUser = [];
+
+// for (let i = 0; i < arrCard.length; i++) {
+// 	if(arrCard.type == "animal") {
+// 		selectAnimal.push(arrCard.type);
+// 	} else if (selectBtn.value == "vegetable") {
+// 		arrCard.push[selectVegetable];
+// 	} else if (selectBtn.value == "user") {
+// 		arrCard.push(selectUser);
+// 	}
+// }
+
+// console.log(selectAnimal);
+// console.log(selectVegetable);
+// console.log(selectUser);
+
+
+
+
+// // 
+// // if()
