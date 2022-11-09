@@ -123,10 +123,10 @@ arrCard.forEach((element) => {
 	const eleCard = document.querySelector(".cards");
 	let card = document.createElement("div");
 	// card = document.classList.add("card");
-	
+	eleCard.append(card);
 	card.innerHTML = `
 	<i class=" ${element.family} ${element.prefix}${element.name}"></i>
 	<div> ${element.name} </div>
 	`
-eleCard.append(card);
+	
 });
