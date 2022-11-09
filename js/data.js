@@ -114,3 +114,19 @@ const arrCard = [
 ];
 
 
+// arrCard.forEach(function (ele){
+// 	eleCard.innerHTML += ele;
+// 	console.log(ele);
+// })
+
+arrCard.forEach((element) => {
+	const eleCard = document.querySelector(".cards");
+	let card = document.createElement("div");
+	// card = document.classList.add("card");
+	
+	card.innerHTML = `
+	<i class=" ${element.family} ${element.prefix}${element.name}"></i>
+	<div> ${element.name} </div>
+	`
+eleCard.append(card);
+});
