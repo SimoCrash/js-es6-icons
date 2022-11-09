@@ -125,8 +125,7 @@ arrCard.forEach((element) => {
 	card.classList.add("card");
 	eleCard.append(card);
 	card.innerHTML = `
-	<i class="${element.family}-solid ${element.prefix}${element.name}"></i>
+	<i class="${element.family}-solid ${element.prefix}${element.name}" style="color: ${element.color}"></i>
 	<div> ${element.name} </div>
-	`
-	
+	`;
 });

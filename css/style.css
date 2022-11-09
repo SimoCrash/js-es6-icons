@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 50px;
+    color: lightblue;
+}
+
+.select-zone {
+    background-color: lightblue;
+    text-align: center;
+    height: 50px;
+}
+
+main {
+    background-color: lightgray;
+    height: 100vh;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    max-width: 90%;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+.card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% - 20rem) / 5);
+    height: 100px;
+    background-color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.card i {
+    font-size: 2rem;
+}
+
